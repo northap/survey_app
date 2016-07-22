@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="irD-4R-uV0">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SurveyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GLz-hH-eW7">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLI-Fa-rV5" userLabel="Overlay">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ri-oX-mkd">
+                                <rect key="frame" x="0.0" y="182" width="600" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFF-z0-zat">
+                                <rect key="frame" x="0.0" y="232" width="600" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fl-RP-Z83">
+                                <rect key="frame" x="205" y="490" width="191" height="48"/>
+                                <color key="backgroundColor" red="0.792156862745098" green="0.12549019607843137" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="7JQ-Rh-94h"/>
+                                    <constraint firstAttribute="width" constant="191" id="seq-R4-xEh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Take the survey">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fHq-K5-OeB" kind="show" id="wOE-U9-yqU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NLI-Fa-rV5" secondAttribute="bottom" id="66g-rA-SZs"/>
+                            <constraint firstAttribute="trailing" secondItem="GLz-hH-eW7" secondAttribute="trailing" id="7cL-Mr-qdx"/>
+                            <constraint firstItem="NLI-Fa-rV5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ch8-P0-6yq"/>
+                            <constraint firstAttribute="trailing" secondItem="4Ri-oX-mkd" secondAttribute="trailing" id="DVj-zc-VB2"/>
+                            <constraint firstItem="NLI-Fa-rV5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Deh-jW-BM5"/>
+                            <constraint firstAttribute="trailing" secondItem="NFF-z0-zat" secondAttribute="trailing" id="GuU-lT-fho"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3Fl-RP-Z83" secondAttribute="bottom" constant="62" id="ICt-0i-9ZF"/>
+                            <constraint firstItem="3Fl-RP-Z83" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LnJ-CE-mwd"/>
+                            <constraint firstItem="4Ri-oX-mkd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="118" id="VNx-60-fnd"/>
+                            <constraint firstItem="GLz-hH-eW7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gQj-v2-O75"/>
+                            <constraint firstItem="NFF-z0-zat" firstAttribute="top" secondItem="4Ri-oX-mkd" secondAttribute="bottom" constant="14" id="hs3-83-epx"/>
+                            <constraint firstItem="GLz-hH-eW7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rNw-t5-HHq"/>
+                            <constraint firstItem="4Ri-oX-mkd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rrO-55-swa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GLz-hH-eW7" secondAttribute="bottom" id="tDd-gO-fOv"/>
+                            <constraint firstItem="NFF-z0-zat" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xaA-7c-fpW"/>
+                            <constraint firstAttribute="trailing" secondItem="NLI-Fa-rV5" secondAttribute="trailing" id="zLx-6N-Ell"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="p5U-yB-lww"/>
+                    <connections>
+                        <outlet property="coverImageView" destination="GLz-hH-eW7" id="R3z-XV-Ovq"/>
+                        <outlet property="descriptionLabel" destination="NFF-z0-zat" id="e4T-cH-eTm"/>
+                        <outlet property="takeSurveyButton" destination="3Fl-RP-Z83" id="4Xp-CY-Uuw"/>
+                        <outlet property="titleLabel" destination="4Ri-oX-mkd" id="RBa-3h-JRv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956" y="303"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gjq-ad-dcT">
+            <objects>
+                <viewController id="fHq-K5-OeB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y55-6s-aLr"/>
+                        <viewControllerLayoutGuide type="bottom" id="wWb-PH-Hts"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q8O-aT-Rta">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ilr-9l-JhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1630" y="329"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CGK-6G-n7T">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="irD-4R-uV0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="V0n-KJ-Pjg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6gb-Cg-YFh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPh-Yy-OOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="319"/>
+        </scene>
+    </scenes>
+</document>
